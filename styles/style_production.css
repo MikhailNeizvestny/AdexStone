@@ -1,4 +1,7 @@
-﻿header {
+﻿body {
+	margin:0;
+}
+header {
   width: 100%;
   height: 300px;
   background-color: green;
@@ -12,16 +15,20 @@
   max-width: 1210px;
 }
 .head {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 16px;
-  font-size: 45px;
-  color: #ddcca3;
-  font-family: 'Ubuntu';
-  text-shadow: 1px 1px 3px #666, -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF;
+  max-width: 1210px;
+  color: white;
+  font-size: 50px;
+  font-family: 'Idealist Sans', sans-serif;
+  text-shadow: 2px 2px 4px black;
 }
 .header-container {
   width: 100%;
   height: 100px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .85);
 }
 .header-container_top {
   max-width: 1210px;
@@ -29,6 +36,7 @@
 	margin-right: 10%;*/
   margin: 0 auto;
   display: flex;
+  height: 100%;
   justify-content: space-between;
 }
 .header-container_logo {
@@ -58,6 +66,8 @@
 .header-container_link  a {
   color: #aa4059;
   text-decoration: none;
+  font-family: 'Proxima Nova';
+  font-weight: bold;
 }
 .header-container_link a {
   display:block;
@@ -85,7 +95,7 @@ ul {
   text-align: center;
 }
 .menu_item {
-  margin: 21px 0;
+  padding: 21px 0;
   display: inline-block;
   text-align: center;
 }
@@ -93,13 +103,13 @@ ul {
   padding: 5px 12px;
   display: block;
   font-size: 16px;
-  font-family: 'Ubuntu';
+  font-family: 'Proxima Nova';
   color: black;
   text-decoration: none;
   line-height: 3em;
 }
-.menu a:hover {
-  background: grey;
+.menu_item:hover {
+  background: #1a7a64;
 }
 
 .call-image {
@@ -116,9 +126,11 @@ ul {
 	/*margin-left: 10%;
 	margin-right: 10%*/
   margin: 0 auto;
+  margin-bottom: 60px;
   display: block;
   max-width: 1210px;
   background-image: url(../images/bg.png);
+  font-family: 'Proxima Nova';
 }
 .content-navigation {
   padding-top: 20px;
@@ -128,22 +140,18 @@ ul {
   color: #1a7a64;
   text-decoration: none;
   border-bottom: 1px solid #1a7a64;
-  font-family: 'Ubuntu';
 }
 
 .content-navigation_text {
   display: inline;
-  font-family: 'Ubuntu';
 }
 .content-navigation_text span {
   color: #1a7a64;
-  font-family: 'Ubuntu';
 }
 
 p {
   margin: 16px;
-  font-size: 16px;
-  font-family: 'Ubuntu';
+  font-size: 18px;
   text-align: justify;
 }
 .image-content {
@@ -156,14 +164,11 @@ p {
 }
 
 h1 {
-  margin-left: 20%;
-  padding-top: 50px;
-  display: inline-block;
-  left: 0;
+
 }
 h2 {
-  font-size: 40px;
-  font-family: 'Ubuntu:600';
+  font-size: 36px;
+  font-family: 'Proxima Nova';
   text-align: center;
   color: red;
 }
@@ -191,6 +196,7 @@ h4 {
 .section-container { 
   margin: 60px auto;
   max-width: 517px;
+  font-family: 'Proxima Nova';
 }
 .section-container_input{
   margin: 10px 0;
@@ -204,7 +210,7 @@ h4 {
   height: 60px;
   width: 100%;
   font-size: 25px;
-  font-family: 'Ubuntu';
+
   text-transform: uppercase;
   border: 1px solid #ddd;
   vertical-align: middle;
@@ -247,6 +253,7 @@ footer{
 }
 .footer-container_desc {
   margin: 16px 0;
+  max-width: 260px;
   display: block;
   font-family: 'Ubuntu';
   color: #a9a8a8;
@@ -280,6 +287,7 @@ footer{
   display: block;
   font-size: 20px;
   font-family: 'Ubuntu';
+  font-weight: bold;
   text-align: right;
 }
 .footer-info_contact{
